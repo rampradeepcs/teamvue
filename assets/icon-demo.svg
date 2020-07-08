@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>icon-demo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Teamvue" transform="translate(-209.000000, -532.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-6" transform="translate(178.000000, 301.000000)">
+                <g id="Group-4" transform="translate(2.000000, 217.000000)">
+                    <path d="M42,14 C34.8265966,14 29,19.8265966 29,27 C29,34.1734034 34.8265966,40 42,40 C49.1734034,40 55,34.1734034 55,27 C55,19.8265966 49.1734034,14 42,14 Z M42,15.1304348 C48.5618207,15.1304348 53.8695652,20.4381793 53.8695652,27 C53.8695652,33.5618207 48.5618207,38.8695652 42,38.8695652 C35.4381793,38.8695652 30.1304348,33.5618207 30.1304348,27 C30.1304348,20.4381793 35.4381793,15.1304348 42,15.1304348 Z M38.0434783,20.3586957 L38.0434783,33.6413043 L38.8913043,33.1467391 L48.5,27.4945652 L49.330163,27 L48.5,26.5054348 L38.8913043,20.8532609 L38.0434783,20.3586957 Z M39.173913,22.3369565 L47.0869565,27 L39.173913,31.6630435 L39.173913,22.3369565 Z" id="icon-demo"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

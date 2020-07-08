@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1208px" height="1593px" viewBox="0 0 1208 1593" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 22</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="797" cy="796.5" rx="797" ry="796.5"></ellipse>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="1594" height="1593" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <linearGradient x1="20.8980007%" y1="-17.7634974%" x2="67.1549964%" y2="96.290292%" id="linearGradient-3">
+            <stop stop-color="#9B66FF" offset="0%"></stop>
+            <stop stop-color="#6236FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Teamvue" transform="translate(-712.000000, -2965.000000)">
+            <g id="Group-22" transform="translate(712.000000, 2965.000000)">
+                <use id="Oval" stroke="#000000" mask="url(#mask-2)" stroke-width="4" fill="#FFFFFF" stroke-dasharray="20" xlink:href="#path-1"></use>
+                <ellipse id="Oval" fill="url(#linearGradient-3)" cx="797" cy="796.5" rx="746" ry="745.5"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>
