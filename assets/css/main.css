@@ -34,7 +34,6 @@ a.navbar-brand {
 }
 
 main {
-    height: 100%;
     padding-top: 5.315rem;
 }
 
@@ -51,7 +50,7 @@ main {
 }
 .sub-title {
     color: #333333;
-    font-size: 1.15rem;
+    font-size: 1.4rem;
     margin-bottom: 1.5rem;
 }
 .page-btn {
@@ -66,6 +65,7 @@ main {
 }
 .page-btn > * {
     color: #fff;
+    text-transform: uppercase;
 }
 .has-img img {
     max-width: 1.25rem;
@@ -158,6 +158,11 @@ main {
 .banner-img img {
     max-width: 25rem;
 }
+.common-details {
+    background: url(../img/bg.svg) no-repeat;
+    background-position: right center;
+    background-size: 50rem;
+}
 /*Tabs CSS*/
 
 .screenshot-block {
@@ -168,7 +173,145 @@ main {
     max-width: 100%;
 }
 .common-details ul li {
-    font-size: 1.15rem;
     list-style: decimal;
     list-style-position: inside;
+}
+
+.tools-content {
+    padding: 2.5rem 2rem 7rem;
+    border: 0.05rem solid #DBDBDB;
+    border-radius: 1.5rem;
+}
+.tools-list .banner-title {
+    font-size: 2.15rem;
+    margin-bottom: 2rem;
+}
+.tools-list ul li {
+    padding-left: 2.25rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+.tools-list ul li:before {
+    content: "";
+    position: absolute;
+    top: 0.75rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 50%;
+    background-color: #6236FF;
+    left: 0.5rem;
+}
+.custom-btn-md {
+    min-width: 175px;
+}
+.custom-btn-xs {
+    min-width: 200px;
+}
+.tools-list .page-btn {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.get-started {
+    padding-bottom: 10rem;
+    position: relative;
+    overflow: hidden;
+}
+.get-started:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+    width: 110%;
+    background: linear-gradient(to bottom, #fff 60%, #F0ECFF);
+    height: 40rem;
+    border-radius: 50%;
+    z-index: -1;
+}
+.get-started-list .activity-content h4 {
+    font-size: 1.5rem;
+}
+.get-started-list {
+    margin: 6rem 0 !important;
+}
+
+.get-started-list > div {
+    position: relative;
+}
+.get-started-list > div:after {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    background: url(../img/icon-right.svg) no-repeat;
+    background-position: center;
+    top: 30%;
+    transform: translate(0, -50%);
+    right: -1.5rem;
+}
+.get-started-list > div:last-child:after {
+    display: none;
+}
+
+.ready {
+    padding: 5rem 0 1rem;
+}
+.ready-block {
+    background: url(../img/ready-bg.svg) no-repeat;
+    background-size: 100% 100%;
+    padding: 2.5rem 2rem 3.5rem;
+}
+
+footer {
+    padding: 3rem 0 0;
+}
+footer .main-container {    
+    border-top: 0.15rem solid #a2a2a2;
+    border-bottom: 0.15rem solid #a2a2a2;
+    padding: 3rem 0;
+}
+footer p, footer ul li a, footer ul li a:hover {
+    font-size: 1rem;
+    color: #a2a2a2;
+}
+.footer-logo {
+    max-width: 200px;
+    margin-bottom: 1.75rem;
+}
+.footer-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0.25rem;
+}
+.social-media-list li {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 0.5rem;
+}
+.social-media-list li:last-child {
+    padding-right: 0;
+}
+.social-media-list li a {
+    display: block;
+    color: #383D4A;
+}
+.social-media-list li a i {
+    font-size: 1.5rem;
+}
+
+footer input.form-control {
+    width: 100%;
+    border-radius: 2rem;
+    font-size: 0.95rem;
+    padding: .375rem 1.25rem;
+    height: 2.75rem;
+}
+
+footer > p {
+    padding: 1.5rem 0;
+    color: #000;
+    margin: 0;
+    font-size: 0.85rem;
 }
