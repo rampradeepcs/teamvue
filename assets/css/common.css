@@ -79,3 +79,10 @@ p {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+.red-text {
+    color: #FF0000 !important;
+}
+.primary-text {
+    color: #6B36FF !important;
+}
