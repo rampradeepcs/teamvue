@@ -4,7 +4,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     z-index: 10;
 }
 header nav ul li.nav-item a {
@@ -20,6 +20,9 @@ header nav ul li.nav-item a.active, header nav ul li.nav-item a:hover {
 a.navbar-brand {
     width: 8.5rem;
     padding: 0;
+}
+.m-t-15 {
+    margin-top: 15px;
 }
 .header-btn {
     border-radius: 4px;
@@ -42,7 +45,8 @@ main {
 
 /*Banner CSS*/
 .banner {
-    height: 100%;
+    height: 96vh;
+    padding: 0 !important;
 }
 .banner-title {
     font-size: 2.5rem;
@@ -83,22 +87,22 @@ main {
     background-color: #FAF9FF;
 }
 .activity-list {
-    margin-top: 3rem !important;
+    margin-top: 1.5rem !important;
 }
 .activity-icon {
     max-width: 100px;
-    margin: 0 auto 20px;
+    margin: 0 auto 0px;
 }
 .activity-icon img {
-    max-width: 100%;
+    max-width: 75%;
     width: 100%;
 }
 .activity-content h4 {
-    font-size: 2.15rem;
+    font-size: 1.50rem;
     font-weight: 600;
 }
 .activity-content p {
-    font-size: 1.175rem;
+    font-size: 1.20rem;
     margin: 0;
 }
 .activity-content {
@@ -106,6 +110,55 @@ main {
     margin: 0 auto;
 }
 
+.modal-dialog.modal-dialog-centered {
+    width: 80vw;
+    max-width: 80vw;
+}
+
+button.close span {
+    font-size: 30px;
+}
+
+/*Grid CSS*/
+
+.grid .grid-list a {
+    border: 0.25rem solid #ffffff;
+    background-color: #f9f8ff;
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    line-height: normal;
+    flex-wrap: wrap;
+    height: 100%;
+    border-radius: 0.35rem;
+    padding: 3.25rem 1rem 3rem;
+}
+.grid .grid-list a * {
+    flex: 1 0 100%;
+    max-width: 100%;
+    color: #333;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+.grid .grid-list a:hover {
+    background-color: #f2f1ff;
+    border: 0;
+    border-top: 0.25rem solid #653aff;
+}
+.grid .grid-list a img {
+    width: 100%;
+    max-width: 2.5rem;
+    margin: 0 auto 0.5rem;
+    height: 3rem;
+}
+.modal-header .banner-title { 
+	font-size: 1.5rem;
+}
+.modal-body .screenshot-block {
+    width: auto;
+    min-height: 30vw;
+}
 /*Tabs CSS*/
 .tabs .nav-tabs {
     border: 0;
@@ -159,17 +212,34 @@ main {
     width: 100%;
 }
 .banner-img img {
-    max-width: 25rem;
+    width: calc(100vw - 5px);
+    max-width: 100vw;
+}
+
+.banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .common-details {
     background: url(../img/bg.svg) no-repeat;
     background-position: right center;
     background-size: 50rem;
 }
+.return-of-investment {
+    background: #f7f5ff;
+    padding: 30px;
+    border-radius: 20px;
+}
 /*Tabs CSS*/
 
 .screenshot-block {
-    width: 40rem;
+    width: 630px;
+    height: 370px;
+    border: 5px solid #242323;
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: 0 20px 20px 0px rgb(0 0 0 / 0.10)
 }
 .screenshot-block img {
     width: 100%;
@@ -534,6 +604,14 @@ footer ul li a.active {
 .slidecontainer input {
     width: 100%;
 }
+.activity-list.get-started-list img {
+    max-width: 90%;
+    width: 100%;
+}
+
+.activity-list.get-started-list .activity-icon{
+    margin: 0 auto 20px;
+}
 .cr_total {
     margin: 0;
     font-size: 0.85rem;
@@ -541,6 +619,7 @@ footer ul li a.active {
     border: 1px solid #6d44ff;
     line-height: 2.4rem;
     border-radius: 3rem;
+    background: #fff;
     min-width: 5rem;
     display: block;
 }
@@ -548,7 +627,8 @@ footer ul li a.active {
     text-align: right;
 }
 .price-title-img img {
-    max-width: 0.75rem;
+    max-width: 30px;
+    opacity: .3;
 }
 
 
@@ -559,7 +639,7 @@ footer ul li a.active {
 }
 
 .single-page .banner-title {
-    margin: 0;
+    margin: 0 auto 20px;
 }
 
 .single-page .banner-list li {
@@ -582,13 +662,53 @@ footer ul li a.active {
     width: 70%;
 }
 
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 20px;
+    background: #5a6269;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    border-radius: 50px;
+    border:1.5px solid #fff;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #7b57ff; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #7b57ff; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
 
 @media screen and (max-width: 991px) {
+    .banner {
+        height: 54vh;
+    }
     .banner-content {
         padding: 0 3rem 0 0;
-    }
-    .banner-img img {
-        max-width: 20rem;
     }
     .banner-title {
         font-size: 2.25rem;
@@ -596,6 +716,7 @@ footer ul li a.active {
     .screenshot-block {
         width: 40rem;
         max-width: 100%;
+		height:auto;
     }
     .employee-activity, .ready-block {
         width: 95% !important;
@@ -741,7 +862,7 @@ footer ul li a.active {
 
 @media screen and (max-width: 767px) {
     .banner-img {
-        /* display: none; */
+        display: none;
     }
     .banner-content {
         padding: 0;

@@ -61,16 +61,15 @@
             </div>
         </div>
     </header>
-
     <main class="w-100">
-        <section class="w-100 common-section banner">
+        <section class="w-100 common-section">
             <div class="main-container h-100">
                 <div class="w-100 h-100 row m-0">
                     <div class="col-12 col-sm-12 col-md-12 p-0">
                         <h2 class="banner-title mb-5">Calculate Return of Investment</h2>
                         <div class="row m-0 return-of-investment">
                             <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 p-0">
-                                <div class="row m-0 mb-3">
+                                <div class="row m-0 mb-3 range-wrap">
                                     <div class="col-9 col-xs-9 col-sm-9 col-md-9 col-lg-9 pl-0">
                                         <p class="row m-0">
                                             <span class="col-9 col-xs-9 col-sm-9 col-md-9 col-lg-9 pl-0">In your company</span>
@@ -79,14 +78,14 @@
                                             </span>
                                         </p>
                                         <div class="slidecontainer">
-                                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange1">
+                                            <input type="range" class="range slider" min="0" max="100" step="1" value="10" data-rangeSlider>
                                         </div>
                                     </div>
                                     <div class="col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 pr-0">
-                                        <p class="cr_total">1</p>
+                                        <p class="cr_total"><output class="bubble"></output></p>
                                     </div>
                                 </div>
-                                <div class="row m-0 mb-3">
+                                <div class="row m-0 mb-3 range-wrap">
                                     <div class="col-9 col-xs-9 col-sm-9 col-md-9 col-lg-9 pl-0">
                                         <p class="row m-0">
                                             <span class="col-9 col-xs-9 col-sm-9 col-md-9 col-lg-9 pl-0">Average Salary</span>
@@ -95,14 +94,14 @@
                                             </span>
                                         </p>
                                         <div class="slidecontainer">
-                                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange2">
+                                           <input type="range" class="range slider" min="100" max="10000" step="1" value="500" data-rangeSlider>
                                         </div>
                                     </div>
                                     <div class="col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 pr-0">
-                                        <p class="cr_total">500</p>
+                                        <p class="cr_total"><output class="bubble"></output></p>
                                     </div>
                                 </div>
-                                <div class="row m-0">
+                                <div class="row m-0 range-wrap">
                                     <div class="col-9 col-xs-9 col-sm-9 col-md-9 col-lg-9 pl-0">
                                         <p class="row m-0">
                                             <span class="col-9 col-xs-9 col-sm-9 col-md-9 col-lg-9 pl-0">Time for private needs</span>
@@ -111,14 +110,16 @@
                                             </span>
                                         </p>
                                         <div class="slidecontainer">
-                                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange3">
+                                             <input type="range" class="range slider" min="1" max="100" step="1" value="15" data-rangeSlider>
                                         </div>
                                     </div>
                                     <div class="col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 pr-0">
-                                        <p class="cr_total">50</p>
+                                        <p class="cr_total"><output class="bubble"></output></p>
                                     </div>
                                 </div>
+                                
                             </div>
+                            
                             <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 p-0">
                                 <div class="row m-0">
                                     <div class="col-12 col-xs-12 col-sm-12 col-md-9 col-lg-8 mx-auto ri-price-container p-0">
@@ -521,7 +522,7 @@
 
         <p class="text-center">All Rights Reserved © teamvue.com</p>
     </footer>
-
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>

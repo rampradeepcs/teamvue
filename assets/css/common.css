@@ -33,6 +33,9 @@ p {
 .align-center {
     align-items: center !important;
 }
+.text-align-center {
+	text-align:center;
+}
 .mt--5 {
     margin-top: -5rem;
 }
@@ -85,4 +88,15 @@ p {
 }
 .primary-text {
     color: #6B36FF !important;
+}
+.range-wrap {
+  position: relative;
+  margin: 0 auto 3rem;
+}
+.range {
+  width: 100%;
+}
+.bubble {
+	color:#000;
+	font-weight:400;
 }
