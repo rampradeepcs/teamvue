@@ -7,6 +7,16 @@ header {
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 10;
 }
+
+a {
+    color: #663dfe;
+}
+
+a:hover {
+    color: #3a2390;
+    text-decoration: none;
+}
+
 header nav ul li.nav-item a {
     font-weight: 500;
     font-size: 1.15rem;
@@ -25,7 +35,7 @@ a.navbar-brand {
     margin-top: 15px;
 }
 .header-btn {
-    border-radius: 4px;
+    border-radius: 30px;
     background: transparent;
     border: 1px solid #6236FF;
     color: #6236FF;
@@ -45,15 +55,17 @@ main {
 
 /*Banner CSS*/
 .banner {
-    height: 96vh;
+    height: calc(826px - 5.315rem);
+    position: relative;
     padding: 0 !important;
 }
 .banner-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 600;
 }
 .banner-content {
     padding: 0 5rem;
+    z-index: 9;
 }
 .sub-title {
     color: #333333;
@@ -61,8 +73,11 @@ main {
     margin-bottom: 1.5rem;
 }
 .page-btn {
-    background: linear-gradient(45deg, #825FFF, #6236FF);
+    /* background: linear-gradient(45deg, #825FFF, #6236FF); */
+    background: #7d5aff;
+    transition: 0.2s ease-in;
     display: flex;
+    border: 1px solid #7d5aff;
     flex-wrap: wrap;
     align-items: center;
     border-radius: 5rem;
@@ -70,6 +85,22 @@ main {
     justify-content: center;
     box-shadow: 0 0 0.25rem 0.175rem #EAF1F5;
 }
+
+.page-btn:hover {
+    background: #fff;
+    color: #7d5aff;
+    transition: 0.2s ease-out;
+}
+
+
+.page-btn span {
+    color: #fff;
+}
+
+.page-btn:hover span {
+   color: #7d5aff;
+}
+
 .page-btn > * {
     color: #fff;
     text-transform: uppercase;
@@ -212,14 +243,21 @@ button.close span {
     width: 100%;
 }
 .banner-img img {
-    width: calc(100vw - 5px);
-    max-width: 100vw;
+    width: 60vw;
 }
 
 .banner-img {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -5.315rem;
+    width: 60%;
+    max-width: 100%;
+    right: 0;
+    height: calc(100% + 5.315rem);
+    padding: 0;
+    background: url(../img/banner3.svg);
+    background-color: #fff;
+    background-size: cover;
+    background-position: left top;
 }
 .common-details {
     background: url(../img/bg.svg) no-repeat;
@@ -254,6 +292,7 @@ button.close span {
     padding: 2.5rem 2rem 7rem;
     border: 0.05rem solid #DBDBDB;
     border-radius: 1.5rem;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 5%);
 }
 .tools-list .banner-title {
     font-size: 2.15rem;
@@ -344,19 +383,32 @@ button.close span {
 footer {
     padding: 3rem 0 0;
 }
+
 footer .main-container {    
     border-top: 0.15rem solid #e6e6e6;
     border-bottom: 0.15rem solid #e6e6e6;
     padding: 3rem 0;
 }
+
 footer p, footer ul li a, footer ul li a:hover {
     font-size: 1rem;
     color: #a2a2a2;
+    margin: 0;
 }
+
 .footer-logo {
     max-width: 200px;
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.25rem;
 }
+
+ul.social-media-list {
+    margin-bottom: 10px;
+}
+
+ul.social-media-list ~ p {
+    padding-right: 12px;
+}
+
 .footer-title {
     font-size: 1.15rem;
     font-weight: 600;
@@ -393,6 +445,29 @@ footer > p {
     margin: 0;
     font-size: 0.85rem;
 }
+
+.support-channel a {
+    color: #797979;
+}
+
+.support-channel a {
+    width: 22px;
+    margin: 0 0 0 5px;
+}
+.support-channel p img {
+    width: 17px;
+}
+
+.support-channel p:last-child img {
+    width: 10px;
+    margin: 0 2px 0 4px;
+}
+
+
+footer .support-channel p {
+    margin-bottom: 5px;
+}
+
 
 #myTabContent .tab-pane {
     padding: 3rem;
@@ -719,7 +794,22 @@ footer ul li a.active {
     cursor: pointer; /* Cursor on hover */
   }
 
+@media screen and (min-width: 1200px) {
+    .main-container {
+        width: 991px;
+    }
+}
+
+@media screen and (min-width: 1550px) {
+    .main-container {
+        width: 1450px;
+    }
+}
+
 @media screen and (max-width: 991px) {
+    .main-container {
+        width: 90%;
+    }
     .banner {
         height: 54vh;
     }
