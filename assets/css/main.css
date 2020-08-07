@@ -1,11 +1,12 @@
 header {
     height: 5.315rem;
-    box-shadow: 0 0 2px 2px #f2f1ff;
+    /* box-shadow: 0 0 2px 2px #f2f1ff; */
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0);
     z-index: 10;
+    transition: background-color 0.3s linear;
 }
 
 a {
@@ -36,7 +37,7 @@ a.navbar-brand {
 }
 .header-btn {
     border-radius: 30px;
-    background: transparent;
+    background-color: rgba(255, 255, 255, 0.65);
     border: 1px solid #6236FF;
     color: #6236FF;
     font-size: 14px;
@@ -262,18 +263,20 @@ button.close span {
 .common-details {
     background: url(../img/bg.svg) no-repeat;
     background-position: right center;
-    background-size: 50rem;
+    background-size: 50vw;
 }
 .return-of-investment {
     background: #f7f5ff;
     padding: 30px;
     border-radius: 20px;
+    width: 80%;
+    margin: 0 auto !important;
 }
 /*Tabs CSS*/
 
 .screenshot-block {
-    width: 630px;
-    height: 370px;
+    width: 35vw;
+    height: 40vh;
     border: 5px solid #242323;
     border-radius: 25px;
     background: #fff;
@@ -319,11 +322,20 @@ button.close span {
 .custom-btn-xs {
     min-width: 200px;
 }
-.tools-list .page-btn {
+.tools-list .page-btn, .tools-list .page-btn-group {
     position: absolute;
     bottom: 2.5rem;
     left: 50%;
     transform: translate(-50%, 0);
+}
+.tools-content.has-offer-head {
+    position: relative;
+}
+.tools-list .page-btn-group .page-btn {
+    position: static;
+    transform: none;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .get-started {
@@ -469,7 +481,7 @@ footer .support-channel p {
 }
 
 
-#myTabContent .tab-pane {
+.common-tab-block .tab-pane {
     padding: 3rem;
     overflow-y: auto;
 }
@@ -528,7 +540,7 @@ footer ul li a.active {
 .ri-price-block {
     width: 100%;
     border-radius: 0.75rem;
-    background-color: #fff;
+    background-color: transparent;
     padding: 1rem;
 }
 .ri-price-block ul li {
@@ -555,23 +567,32 @@ footer ul li a.active {
     margin-bottom: 0;
 }
 .ri-price-value p:first-child {
-    font-size: 1rem;
+    font-size: 1.35rem;
     font-weight: 600;
 }
 .ri-price-value .ri-price-xs {
-    font-size: 0.75rem;
+    font-size: 0.95rem;
 }
 .ri-price-container .page-btn {
-    margin: 0 auto 1.5rem;
+    margin: 0 0 1.5rem auto;
+    background-color: #01A546;
+    border-color: #01A546;
+}
+.ri-price-container .page-btn:hover {
+    background-color: #fff;
+    border-color: #01A546;
+}
+.ri-price-container .page-btn:hover span {
+    color: #01A546;
 }
 
 .ri-price-container.p-0 {
     background: #fff;
 }
 
-.col-12 .range-wrap:first-child {
+/* .col-12 .range-wrap:first-child {
     margin-top: 34px !important;
-}
+} */
 .has-offer-head {
     padding: 0 !important;
     overflow: hidden;
@@ -706,12 +727,13 @@ footer ul li a.active {
 .cr_total {
     margin: 0;
     font-size: 0.85rem;
-    text-align: center;
-    border: 1px solid #6d44ff;
-    line-height: 2.4rem;
-    border-radius: 3rem;
+    text-align: left;
+    border: 1px solid #ddd;
+    line-height: 1.75rem;
+    border-radius: 0;
     background: #fff;
-    min-width: 5rem;
+    padding: 0 0.5rem;
+    max-width: 5rem;
     display: block;
 }
 .price-title-img {
@@ -719,7 +741,7 @@ footer ul li a.active {
 }
 .price-title-img img {
     max-width: 30px;
-    opacity: .3;
+    opacity: .75;
 }
 
 
@@ -754,6 +776,8 @@ footer ul li a.active {
 }
 
 .slidecontainer {
+    position: relative;
+    margin-top: -0.65rem;
     width: 100%; /* Width of the outside container */
   }
   
@@ -764,7 +788,7 @@ footer ul li a.active {
     width: 100%;
     height: 8px;
     border-radius: 20px;
-    background: #5a6269;
+    background: #D6D6D6;
     outline: none;
     -webkit-transition: .2s;
     transition: opacity .2s;
@@ -780,19 +804,213 @@ footer ul li a.active {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
     border-radius: 50px;
-    border:1.5px solid #fff;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #7b57ff; /* Green background */
+    border: 0.2rem solid #01A546;
+    width: 0.85rem; /* Set a specific slider handle width */
+    height: 0.85rem; /* Slider handle height */
+    background: #fff; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
   
   .slider::-moz-range-thumb {
     width: 25px; /* Set a specific slider handle width */
     height: 25px; /* Slider handle height */
-    background: #7b57ff; /* Green background */
+    background: #01A546; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
+
+.header-white-bg {
+    background-color: #fff !important;
+    box-shadow: 0 0 0.125rem 0.125rem #f2f1ff;
+}
+
+.nav-item-4 li.nav-item {
+    width: calc(100% / 4) !important;
+    margin-bottom: 0.3rem;
+}
+.tab-h-auto .tab-pane {
+    height: auto !important;
+}
+.tabs .tab-content.tab-h-auto, .has-active-tab li.nav-item {
+    margin: 0;
+}
+.has-active-tab li.nav-item .nav-link {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.tabs .tab-h-auto .tab-pane  {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.features-tab-block {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.features-tab-block > div {
+    flex: 1 0 100%;
+}
+.features-tab-block > div:last-child {
+    margin-bottom: 0.3rem;
+}
+
+.offer-block { 
+    padding: 3rem 0;
+    background: url(../img/offer-banner.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.offer-block:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(40 52 63 / 75%);
+}
+.offer-block > .w-50 > * {
+    position: relative;
+}
+.offer-block * {
+    color: #fff;
+    text-align: center;
+}
+
+.offer-block a {
+    display: block;
+    text-align: center;
+}
+.pricing-block > .d-flex > * {
+    flex: 1 0 100%;
+    margin-bottom: 0.5rem;
+}
+.pricing-block h2 {
+    font-size: 3rem;
+}
+.pricing-block h3 {
+    margin-right: 1rem;
+}
+
+.pricing-value * {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.pricing-block h4, .pricing-block h3 {
+    margin: 0;
+}
+.start-btn {
+    margin-top: 1rem;
+    background-color: #ff9800;
+    border-color: #ff9800;
+    box-shadow: 0 0 0.25rem 0.175rem #3a3737;
+}
+.start-btn:hover {
+    color: #ff9800;
+}
+.offer-title {
+    position: relative;
+}
+.offer-title::before {
+    content: "";
+    position: absolute;
+    top: -0.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 2rem;
+    height: 0.15rem;
+    background-color: #ff9800;
+}
+.offer-block a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+.offer-text {
+    position: relative;
+}
+
+.offer-text:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(15deg);
+    height: 0.175rem;
+    background-color: red;
+    width: 3rem;
+}
+.offer-block h4 span {
+    font-size: inherit;
+    color: #ff9800;
+}
+.free-text span {
+    margin-right: 0.5rem;
+}
+.free-text span:last-child {
+    margin: 0;
+}
+.pricing-block {
+    margin-bottom: 0.5rem;
+}
+.pricing-block {
+    margin-bottom: 0.5rem;
+}
+
+.free-text {
+    margin-bottom: 1rem;
+}
+.free-text > * {
+    margin: 0;
+    padding: 0 0.5rem;
+    border-right: 0.05rem solid #fff;
+}
+.free-text > *:last-child {
+    border: 0;
+}
+.ri-price-container.p-0 {
+    background-color: transparent;
+}
+h2 b {
+    font-size: inherit;
+}
+
+.offer-head .offer-text + p {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.offer-head-content .red-text {
+    font-size: 1.2rem;
+}
+.offer-head-content .offer-text:after {
+    transform: translate(-50%, -50%) rotate(0);
+    width: 40%;
+}
+.nav-link.page-btn {
+    border-radius: 5rem;
+}
+.pricing-tab .nav-tabs .nav-item {
+    margin-right: 1rem;
+}
+.pricing-tab .nav-tabs .nav-item:last-child {
+    margin-right: 0;
+}
+.pricing-tab .nav-tabs .nav-item .nav-link {
+    color: #495057;
+    background-color: #fff;
+    border-color: transparent;
+    outline: none !important;
+}
+.pricing-tab .nav-tabs .nav-item .nav-link.active {
+    color: #fff;
+    background-color: #7d5aff;
+    border-color: transparent;
+}
+.pricing-tab .nav-tabs .nav-item .nav-link:focus {
+    box-shadow: 0 0 0.25rem 0.175rem #EAF1F5;
+}
+
+
 
 @media screen and (min-width: 1200px) {
     .main-container {
@@ -807,6 +1025,9 @@ footer ul li a.active {
 }
 
 @media screen and (max-width: 991px) {
+    .return-of-investment {
+        width: 100%;
+    }
     .main-container {
         width: 90%;
     }
@@ -957,7 +1178,7 @@ footer ul li a.active {
     footer > .main-container > .row > .col-12:last-child .page-btn {
         margin: 0 auto;
     }
-    #myTabContent > .tab-pane > .row > .col-12 {
+    .common-tab-block > .tab-pane > .row > .col-12 {
         padding: 0 !important;
         height: auto !important;
     }
