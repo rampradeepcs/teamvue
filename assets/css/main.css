@@ -833,13 +833,12 @@ footer ul li a.active {
 
 .nav-item-4 li.nav-item {
     width: calc(100% / 4) !important;
-    margin-bottom: 0.3rem;
 }
 .tab-h-auto .tab-pane {
     height: auto !important;
 }
-.tabs .tab-content.tab-h-auto, .has-active-tab li.nav-item {
-    margin: 0;
+.has-active-tab {
+    margin: 0 !important;
 }
 .has-active-tab li.nav-item .nav-link {
     border-bottom-left-radius: 0;
@@ -854,6 +853,12 @@ footer ul li a.active {
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
+}
+.features-tab-block .nav {
+    margin: 0 0 0.3rem;
+}
+.features-tab-block .tab-content {
+    margin: 0 0 0.3rem;
 }
 .features-tab-block > div {
     flex: 1 0 100%;
