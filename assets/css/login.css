@@ -6,7 +6,10 @@
     background: #F7F5FF;
 }
 
-.login-img-contain {padding: 5vh 2vw;text-align: center;}
+.login-img-contain {
+    padding: 5vh 5vw;
+    text-align: center;
+}
 
 .login-logo {width: 100%;}
 
@@ -160,6 +163,14 @@ button.btn.btn-light-primary.btn-login span {
 /*Register CSS*/
 
 
+@media screen and (max-width: 1200px){
+    .btn-login {
+        padding: 10px 20px;
+    }
+    .login-form {
+        width: 34vw;
+    }
+}
 
 @media only screen and (max-width: 991px) {
     .login-img-contain {

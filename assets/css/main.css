@@ -1022,7 +1022,9 @@ h2 b {
 .pricing-tab .nav-tabs .nav-item .nav-link:focus {
     box-shadow: 0 0 0.25rem 0.175rem #EAF1F5;
 }
-
+.offer-block button {
+    margin-top: 2.5rem;
+}
 
 
 @media screen and (min-width: 1200px) {
@@ -1056,7 +1058,7 @@ h2 b {
     .screenshot-block {
         width: 40rem;
         max-width: 100%;
-		height:auto;
+		height: 13rem;
     }
     .employee-activity, .ready-block {
         width: 95% !important;
@@ -1198,6 +1200,17 @@ h2 b {
     .pricing .tools-list > .col-12:first-child ~ .col-12 .offer {
         left: -0.85rem;
     }
+    .offer-block > .w-50 {
+        width: 80% !important;
+    }
+    .features-tab-block .nav-tabs {
+        padding: 0;
+    }
+    .nav-item-4 li.nav-item {
+        margin: 0;
+        min-width: 14rem;
+        max-width: calc(100% / 4);
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1244,6 +1257,15 @@ h2 b {
         left: 50%;
         transform: translate(-50%, 0) rotate(90deg);
     }
+    .ri-price-block {
+        padding: 0;
+    }
+    .ri-price-container .page-btn {
+        margin: 2rem auto 0 auto;
+    }
+    .common-tab-block .tab-pane {
+        padding: 2.25rem;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -1258,5 +1280,11 @@ h2 b {
     }
     .sub-title {
         font-size: 1.15rem;
+    }
+    .offer-block > .w-50 {
+        width: 90% !important;
+    }
+    .common-tab-block .tab-pane {
+        padding: 1.75rem;
     }
 }
