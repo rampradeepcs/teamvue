@@ -538,9 +538,17 @@ footer ul li a.active {
     border-color: transparent;
 }
 .navbar-light .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-    background: url(../img/close.svg) no-repeat;
+    background: url(../img/icon-x.svg) no-repeat;
     background-size: 1rem;
     background-position: center;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../img/icon-menu.svg);
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
 }
 
 .ri-price-block {
