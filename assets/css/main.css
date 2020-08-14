@@ -509,17 +509,15 @@ footer .support-channel p {
 }
 
 .comparison-table tbody tr td img {
-    border: 1px solid #ef313d;
     width: 30px;
     height: 30px;
-    padding: 5px;
+    padding: 1px;
     display: inline-block;
     border-radius: 100%;
     max-width: 2.25rem;
 }
 .comparison-table tbody tr.tick td img {
     max-width: 2.25rem;
-    border-color: #01ac4b;
 }
 .comparison {
     border-radius: 0.5rem;
