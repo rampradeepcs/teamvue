@@ -21,12 +21,12 @@ function setBubble(range, bubble) {
   bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
 }
 
-window.onload = function(){
-  $("body, html").scrollTop(0);
-  if(this.scrollY > 100) {
-    header[0].classList.add("header-white-bg");
-  }
-};
+// window.onload = function(){
+//   $("body, html").scrollTop(0);
+//   if(this.scrollY > 100) {
+//     header[0].classList.add("header-white-bg");
+//   }
+// };
 
 var header = document.getElementsByTagName("header");
 window.onscroll = function(){

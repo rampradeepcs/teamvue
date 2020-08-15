@@ -381,7 +381,7 @@ button.close span {
 }
 
 .ready {
-    padding: 5rem 0 1rem;
+    padding: 5rem 0;
 }
 .ready-block {
     background: url(../img/ready-bg.svg) no-repeat;
@@ -1055,7 +1055,21 @@ h2 b {
 .offer-block button {
     margin-top: 2.5rem;
 }
-
+.testimonial-icon {
+    max-width: 7rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testimonial-icon img {
+    width: 100%
+}
+.testimonial-content {
+    max-width: calc(100% - 7rem);
+    padding: 0 0 0 2rem;
+}
+.testimonial-content p:last-child {
+    font-size: 1rem;
+}
 
 @media screen and (min-width: 1200px) {
     .main-container {
@@ -1240,6 +1254,15 @@ h2 b {
         margin: 0;
         min-width: 14rem;
         max-width: calc(100% / 4);
+    }
+    .testimonial-content {
+        max-width: 100%;
+    }
+    .testimonial-icon {
+        margin: 0 auto 2rem;
+    }
+    .testimonial-item {
+        align-items: stretch !important;
     }
 }
 
