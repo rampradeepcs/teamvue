@@ -392,12 +392,17 @@ button.close span {
     overflow: hidden;
 }
 
-footer {
+/* footer {
     padding: 3rem 0 0;
+} */
+
+.testimonial-list h2.banner-title {
+    margin-top: 2.5rem;
+    font-size: 2rem;
 }
 
 footer .main-container {    
-    border-top: 0.15rem solid #e6e6e6;
+    /* border-top: 0.15rem solid #e6e6e6; */
     border-bottom: 0.15rem solid #e6e6e6;
     padding: 3rem 0;
 }
