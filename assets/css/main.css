@@ -1272,6 +1272,9 @@ h2 b {
 }
 
 @media screen and (max-width: 767px) {
+    .testimonial-list h2.banner-title {
+        margin: 0 0 3rem;
+    }
     .banner-img {
         display: none;
     }
