@@ -1094,6 +1094,10 @@ h2 b {
     font-size: 0.85rem;
     padding: 0.15rem 0.35rem;
 }
+.blog-details-block img {
+    width: 12px;
+    margin-top: -2px;
+}
 .tags {
     background-color: #f2f1ff;
     border-radius: 0.35rem;
@@ -1111,6 +1115,10 @@ h2 b {
 @media screen and (min-width: 1550px) {
     .main-container {
         width: 1450px;
+    }
+
+    .main-container.blog-contain {
+        width: 70vw;
     }
 }
 
