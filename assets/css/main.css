@@ -1075,6 +1075,32 @@ h2 b {
 .testimonial-content p:last-child {
     font-size: 1rem;
 }
+.blog-item {
+    border: 0.1rem solid #ddd;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.blog-title {
+    font-size: 2.15rem;
+    font-weight: 600;
+}
+.blog-content a {
+    color: #000;
+}
+.blog-content a:hover {
+    text-decoration: underline;
+}
+.blog-details-block span {
+    font-size: 0.85rem;
+    padding: 0.15rem 0.35rem;
+}
+.tags {
+    background-color: #f2f1ff;
+    border-radius: 0.35rem;
+}
+.blog-content h4, .blog-content h5 {
+    font-weight: 600;
+}
 
 @media screen and (min-width: 1200px) {
     .main-container {
